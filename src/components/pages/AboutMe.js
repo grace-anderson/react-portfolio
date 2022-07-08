@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./AboutMe.css";
+
 export default function AboutMe() {
   return (
-    <div>
+    <div className="margin-top overflow">
       <h1>HOME / ABOUT ME</h1>
       <p>
         This is the home page, with about me info (and active 'about me' nav
@@ -37,12 +39,6 @@ export default function AboutMe() {
         or avatar of the developer and a short bio about them
       </p>
 
-      <h2>FOOTER</h2>
-      <p>
-        WHEN I view the footer THEN I am presented with text or icon links to
-        the developer’s GitHub and LinkedIn profiles, and their profile on a
-        third platform (Stack Overflow, Twitter)
-      </p>
     </div>
   );
 }

@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./Portfolio.css";
+
 export default function Portfolio() {
   return (
-    <div>
+    <div className="margin-top">
       <h1>Porfolio</h1>
       <p>
         WHEN I am presented with the Portfolio section THEN I see titled images

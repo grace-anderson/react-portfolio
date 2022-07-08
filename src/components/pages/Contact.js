@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./Contact.css";
+
 export default function Contact() {
   return (
-    <div>
+    <div className="margin-top">
       <h1>Contact</h1>
       <p>
         WHEN I am presented with the Contact section THEN I see a contact form

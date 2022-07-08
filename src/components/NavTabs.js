@@ -4,7 +4,7 @@ import './NavTabs.css';
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs">
-      <li className="nav-item">
+      <li className="nav-item white-text">
         <a
           href="#about"
           onClick={() => handlePageChange("AboutMe")}
