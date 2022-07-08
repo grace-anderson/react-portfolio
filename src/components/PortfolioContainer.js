@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import NavTabs from "./NavTabs";
-import Home from "./pages/Home";
-//TODO
-//About Me - will be the home page
-//Portfolio,
-//Contact
-//Resume
+import AboutMe from "./pages/AboutMe"; //AboutMe is home page, with active "About Me" nav link
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("AboutMe");
 
   const renderPage = () => {
-    if (currentPage === "Home") {
-      return <Home />;
+    if (currentPage === "AboutMe") {
+      return <AboutMe />;
     }
-    //TODO
-    //About Me - will be the home page
-    //Portfolio,
-    //Contact
-    //Resume
+    if (currentPage === 'Portfolio') {
+        return <Portfolio />;
+    }
+    if (currentPage === 'Contact') {
+        return <Contact />;
+    }
+    return <Resume/>;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
