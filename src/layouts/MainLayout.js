@@ -8,7 +8,7 @@ export default function MainLayout(props) {
     <div>
       <div className="flex items-center justify-center">
       {/* header */}
-      {<Header />}
+      <Header />
       </div>
 
       {/* nav */}
@@ -17,7 +17,7 @@ export default function MainLayout(props) {
       {props.children}
 
       {/* footer */}
-      <Footer />
+      <Footer className="flex items-center justify-center" />
     </div>
   );
 }

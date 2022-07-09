@@ -29,10 +29,6 @@ code {
   align-items: flex-start;
 }
 
-.items-right {
-  align-items: flex-end;
-}
-
 .ul-padding {
   padding-inline-start: 0;
 }
@@ -54,4 +50,14 @@ h1 {
 
 .header-title {
   font-size: 2.4rem;
+}
+
+.icon-style {
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
+.icon-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
