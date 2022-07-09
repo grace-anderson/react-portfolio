@@ -6,10 +6,9 @@ import Footer from "./Footer";
 export default function MainLayout(props) {
   return (
     <div>
-      <div className="flex items-center justify-center">
       {/* header */}
       <Header />
-      </div>
+      {/* </div> */}
 
       {/* nav */}
       <Navbar />
@@ -17,7 +16,7 @@ export default function MainLayout(props) {
       {props.children}
 
       {/* footer */}
-      <Footer className="flex items-center justify-center" />
+      <Footer/>
     </div>
   );
 }
