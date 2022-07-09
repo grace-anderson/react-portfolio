@@ -33,8 +33,8 @@ code {
   align-items: flex-end;
 }
 
-.display-inline {
-  display:inline;
+.ul-padding {
+  padding-inline-start: 0;
 }
 
 .font-base {
@@ -48,6 +48,10 @@ code {
   font-size: 2rem;
 }
 
-.font-cursive {
+h1 {
   font-family: 'Short Stack', cursive;
+}
+
+.header-title {
+  font-size: 2.4rem;
 }

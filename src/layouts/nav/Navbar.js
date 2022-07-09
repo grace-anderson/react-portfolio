@@ -5,13 +5,13 @@ import ShadeButton from "../../components/button/ShadeButton";
 export default function Navbar() {
   const navItems = [
     {
-      title: "Home",
+      title: "About",
       link: "/",
     },
-    {
-      title: "About",
-      link: "/about",
-    },
+    // {
+    //   title: "About",
+    //   link: "/about",
+    // },
     {
       title: "Portfolio",
       link: "/Portfolio",
@@ -44,7 +44,7 @@ export default function Navbar() {
   return (
 
     <nav>
-      <ul className="flex items-right justify-center">
+      <ul className="ul-padding flex items-centre justify-center">
 
         {navItems.map((item) => {
           return (

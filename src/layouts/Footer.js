@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="flex items-center justify-center" >
       <h1 className="font-cursive">Footer</h1>
       <p>
         WHEN I view the footer THEN I am presented with text or icon links to
