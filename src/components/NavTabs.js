@@ -2,9 +2,46 @@ import React from "react";
 import './NavTabs.css';
 
 function NavTabs({ currentPage, handlePageChange }) {
+
+  const navItems = [
+    {
+      title: 'About Me',
+      href: '#about',
+      pageName: 'AboutMe'
+    },
+    {
+      title: 'Portfolio',
+      href: '#portfolio',
+      pageName: 'Portfolio'
+    },
+    // {
+    //   title: 'About Me',
+    //   href: '#about',
+    //   pageName: 'AboutMe'
+    // },
+    // {
+    //   title: 'About Me',
+    //   href: '#about',
+    //   pageName: 'AboutMe'
+    // },
+  ]
+
+
   return (
     <ul className="nav nav-tabs">
-      <li className="nav-item white-text">
+      {navItems.map((item) =>  (
+        <li key={item.title} className="nav-item white-text">
+          <a
+            href={item.href}
+            onClick={() => handlePageChange(item.pageName)}
+            className={currentPage === item.pageName ? "nav-link active" : "nav-link"}
+          >
+              {item.title}
+          </a>
+      </li>
+      ))}
+
+      {/* <li className="nav-item white-text">
         <a
           href="#about"
           onClick={() => handlePageChange("AboutMe")}
@@ -39,7 +76,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
             Resume
         </a>
-      </li>
+      </li> */}
     </ul>
   );
 }

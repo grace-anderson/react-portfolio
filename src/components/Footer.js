@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function Footer() {
+
+
+  useEffect(() => {
+    // check screen size & page
+    // if page is about --> 
+
+    // if page is portfolio
+    
+
+  }, []);
     return (
         <footer>
             <h1>Footer</h1>

@@ -32,22 +32,26 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <Container fluid>
-      <Row
-        className="padding-top-bottom padding-left-right white-text background-image"
-      >
-        <Col>{<Header />}</Col>
-        <Col>
-          {
-            <NavTabs
-              currentPage={currentPage}
-              handlePageChange={handlePageChange}
-            />
-          }
-        </Col>
-      </Row>
-      <Row className="padding-left-right">{renderPage()}</Row>
-      <Row className="footer">{<Footer />}</Row>
-    </Container>
+    <>
+    
+      <Container fluid>
+        <Row
+          className="padding-top-bottom padding-left-right white-text background-image"
+        >
+          <Col>{<Header />}</Col>
+          <Col>
+            {
+              <NavTabs
+                currentPage={currentPage}
+                handlePageChange={handlePageChange}
+              />
+            }
+          </Col>
+        </Row>
+        <Row className="padding-left-right">{renderPage()}</Row>
+        </Container>
+        <Row className="footer">{<Footer />}</Row>
+    </>
+
   );
 }

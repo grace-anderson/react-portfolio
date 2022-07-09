@@ -5,7 +5,18 @@
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    position:absolute;
+    position: fixed;
     width:100%;
     bottom:0px;
 }
+
+.is-fixed{
+    position: fixed;
+}
+
+@media screen and (max-width: 768px) {
+    .footer  {
+        position: static;
+    }
+}
+    

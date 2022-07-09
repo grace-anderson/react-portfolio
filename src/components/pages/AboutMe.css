@@ -1,7 +1,7 @@
-.margin-top {
+.custom-margin-top {
   margin-top: 2rem;
 }
 
-.overflow {
-    overflow: auto;
+.custom-overflow {
+    overflow-y: auto !important;
 }
