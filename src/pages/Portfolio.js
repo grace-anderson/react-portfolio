@@ -1,11 +1,20 @@
 import React from "react";
 import { FaGithubSquare } from "react-icons/fa";
 import bookNest from "../components/images/bookNest.jpg";
+import jate from "../components/images/jate.png";
 
 function Portfolio() {
   const portfolioItems = [
     {
-      image: <img className="card-image" src={bookNest} alt="Book Nest"></img>,
+      image: (
+        <a
+          href="https://the-book-nest.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="card-image" src={bookNest} alt="Book Nest"></img>
+        </a>
+      ),
       title: "Book Nest",
       description:
         "A free book sharing app. Full-stack Javascript, Node, mySQL, sequelize, express, handlebars",
@@ -30,10 +39,29 @@ function Portfolio() {
       ),
     },
     {
-      title: "Project Two",
+      image: <img className="card-image" src={jate} alt="JATE-Just Another Text Editor"></img>,
+      title: "JATE - Just Another Text Editor",
       description:
-        "This is a sample description adfadsfdsa for the second project",
-      link: "This is a link to the second project",
+        "A text editor that runs in the browser that will also function offline",
+      deployed: (
+        <a
+          href="https://mighty-inlet-78059.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+          alt="Deployed JATE app"
+        >
+          Deployed JATE app
+        </a>
+      ),
+      github: (
+        <a
+          href="https://github.com/grace-anderson/text-editor"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaGithubSquare />
+        </a>
+      ),
     },
   ];
 
@@ -49,8 +77,8 @@ function Portfolio() {
                 <b>{item.title}</b>
               </h4>
               <p>{item.description}</p>
-              <p>{item.deployed}</p>
-              <i className="card-icon">{item.github}</i>
+              <div>{item.deployed}</div>
+              <div className="card-icon">{item.github}</div>
             </div>
           </div>
         ))}
