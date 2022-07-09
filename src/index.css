@@ -1,32 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.justify-center{
+.justify-center {
   justify-content: center;
 }
-.items-center{
+.items-center {
   align-items: center;
 }
 
 .items-left {
   align-items: flex-start;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .ul-padding {
@@ -41,7 +45,7 @@ code {
   font-size: 1.5rem;
 }
 
-.font-lg{
+.font-lg {
   font-size: 2rem;
 }
 
@@ -50,8 +54,9 @@ p {
   padding-right: 2rem;
 }
 
-h1 {
-  font-family: 'Short Stack', cursive;
+h1,
+h2 {
+  font-family: "Short Stack", cursive;
   text-align: center;
   padding-top: 1rem;
 }
@@ -71,9 +76,58 @@ h1 {
   padding-right: 1rem;
 }
 
+.card-icon {
+  font-size: 2.4rem;
+}
+
 .image-circle {
   width: 8rem;
   height: 8rem;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.skills-list {
+  padding-left: 8rem;
+}
+
+/* portfolio cards */
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.card {
+  background-color: red;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 0.6rem;
+  width: 400px; 
+  margin: auto;
+  margin: 1rem;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-image {
+  border-radius: 0.6rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.container {
+  padding: 0.4rem 2rem;
+}
+
+@media (max-width: 768px) {
+ .card {
+  width: 80%;
+ }
 }
