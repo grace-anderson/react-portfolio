@@ -33,25 +33,27 @@ export default function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  function isActive(link){
+  function isActive(link) {
     return location.pathname === link;
   }
 
-  function redirect(link){
+  function redirect(link) {
     // navigate(link);
   }
 
   return (
+
     <nav>
-      <ul className="flex items-center justify-center">
-        <li style={liStyle}>LOGO</li>
+      <ul className="flex items-right justify-center">
 
         {navItems.map((item) => {
           return (
             <li key={item.link} style={liStyle}>
-              <ShadeButton onClick={redirect(item.link)} isActive={isActive(item.link)}>
-
-                <NavLink  className="font-base" to={item.link}>
+              <ShadeButton
+                onClick={redirect(item.link)}
+                isActive={isActive(item.link)}
+              >
+                <NavLink className="font-base" to={item.link}>
                   {item.title}
                 </NavLink>
               </ShadeButton>
