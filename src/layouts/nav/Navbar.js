@@ -9,12 +9,20 @@ export default function Navbar() {
       link: "/",
     },
     {
-      title: "Project",
-      link: "/project",
-    },
-    {
       title: "About",
       link: "/about",
+    },
+    {
+      title: "Portfolio",
+      link: "/Portfolio",
+    },
+    {
+      title: "Contact",
+      link: "/contact",
+    },
+    {
+      title: "Resume",
+      link: "/Resume",
     },
   ];
 

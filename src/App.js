@@ -1,8 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-import About from "./pages/About";
 import Home from "./pages/Home";
-import Project from "./pages/Project";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 function App() {
   return (
@@ -10,8 +12,10 @@ function App() {
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Project />} />
           <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>
