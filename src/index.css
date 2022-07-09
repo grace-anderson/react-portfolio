@@ -70,3 +70,10 @@ h1 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.image-circle {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
