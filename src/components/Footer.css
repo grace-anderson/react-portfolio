@@ -2,7 +2,7 @@
     background-color: #000;
     color: #fff;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
     padding-left: 2rem;
     padding-right: 2rem;
     position: fixed;
@@ -12,9 +12,11 @@
 
 .is-fixed{
     position: fixed;
+    /* overflow: auto; */
+    width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .footer  {
         position: static;
     }

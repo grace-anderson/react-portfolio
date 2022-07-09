@@ -4,7 +4,7 @@ import "./AboutMe.css";
 
 export default function AboutMe() {
   return (
-    <div className="custom-margin-top custom-overflow">
+    <div className="about-margin-top about-overflow">
       <h1>HOME / ABOUT ME</h1>
       <p>
         This is the home page, with about me info (and active 'about me' nav

@@ -36,7 +36,7 @@ export default function PortfolioContainer() {
     
       <Container fluid>
         <Row
-          className="padding-top-bottom padding-left-right white-text background-image"
+          className="custom-row padding-top-bottom padding-left-right white-text background-image"
         >
           <Col>{<Header />}</Col>
           <Col>
@@ -50,7 +50,7 @@ export default function PortfolioContainer() {
         </Row>
         <Row className="padding-left-right">{renderPage()}</Row>
         </Container>
-        <Row className="footer">{<Footer />}</Row>
+        <Row className="footer custom-row ">{<Footer />}</Row>
     </>
 
   );

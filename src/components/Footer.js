@@ -8,11 +8,11 @@ function Footer() {
     // if page is about --> 
 
     // if page is portfolio
-    
+
 
   }, []);
     return (
-        <footer>
+        <footer className="is-fixed">
             <h1>Footer</h1>
       <p>
         WHEN I view the footer THEN I am presented with text or icon links to
