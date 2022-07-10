@@ -12,7 +12,7 @@ export default function Resume() {
       </div>
       <h2>Full-Stack Technical Skills</h2>
       <div className="flex justify-center">
-        <div className="text-content-width">
+        <div className="text-content-width-narrow">
           <ul className="skills-list">
             <li>JavaScript</li>
             <li>React</li>

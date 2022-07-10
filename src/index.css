@@ -1,26 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Short+Stack&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Short+Stack&display=swap");
 
 :root {
-  --pink: #8C4766;
-  --yellow: #D7E04F;
-  --dark-green: #3B4B00;
-  --light-green: #5F8F29;
-  --pale-blue: #ECF5FA;
+  --pink: #8c4766;
+  --yellow: #d7e04f;
+  --dark-green: #3b4b00;
+  --light-green: #5f8f29;
+  --pale-blue: #ecf5fa;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
 
 body {
   margin: 0;
-  font-family:'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -59,12 +56,9 @@ h3 {
 .justify-center {
   justify-content: center;
 }
+
 .items-center {
   align-items: center;
-}
-
-.items-left {
-  align-items: flex-start;
 }
 
 .text-align-center {
@@ -79,20 +73,16 @@ h3 {
   font-size: 1.2rem;
 }
 
-.font-md {
-  font-size: 1.5rem;
-}
-
-.font-lg {
-  font-size: 2rem;
-}
-
 p {
   padding: 1rem 0 1rem 1rem;
 }
 
-.text-content-width {
+.text-content-width-med {
   width: 60%;
+}
+
+.text-content-width-narrow {
+  width: 40%;
 }
 
 .image-circle {
@@ -105,7 +95,7 @@ p {
 }
 
 .skills-list {
-  padding-left: 14rem;
+  padding-left: 10rem;
 }
 
 footer {
@@ -126,7 +116,7 @@ footer {
 }
 
 .icon-padding {
-  margin: 0 2rem;
+  margin: 1rem;
 }
 
 /* portfolio cards */
@@ -192,7 +182,7 @@ footer {
 }
 
 /* form */
- .form-section {
+.form-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,18 +214,11 @@ footer {
   margin-bottom: 2rem;
 }
 
-.form__label {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #777;
-}
-
 .form__input {
   width: 100%;
   padding: 2rem 1rem;
   border: 0;
-  background: #f0f0f0;
+  background: rgba(215,224,79,0.2);
   border-radius: 0.6rem;
   font-size: 1rem;
   color: #555;
@@ -278,14 +261,19 @@ footer {
   color: var(--light-green);
 }
 
-/* media query */
-@media (max-width: 768px) {
+/* media queries */
+@media (max-width: 992px) {
+  .text-content-width-narrow {
+    width: 60%;
+  }
+}
 
+@media (max-width: 768px) {
   .header-title {
     font-size: 2.2rem;
   }
 
-  .text-content-width {
+  .text-content-width-med {
     width: 80%;
   }
 

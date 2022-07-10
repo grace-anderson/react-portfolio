@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import NavButton from "../../components/button/NavButton";
+import NavButton from "../../components/navButton/NavButton";
 
 export default function Navbar() {
   const navItems = [

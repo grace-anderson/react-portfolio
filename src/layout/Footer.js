@@ -3,7 +3,7 @@ import Icons from "../components/icons/Icons";
 
 function Footer() {
   return (
-    <footer className="footer flex items-center justify-center">
+    <footer className="footer">
       <Icons />
     </footer>
   );

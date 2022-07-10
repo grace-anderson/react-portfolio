@@ -6,7 +6,7 @@ export default function Contact() {
     <div>
       <h1>Contact Me</h1>
       <div className="flex justify-center">
-        <div className="text-content-width">
+        <div className="text-content-width-med">
           <p>
             Please feel free to reach out by completing the contact form. If you
             require a response, I'll contact you within a few days.
