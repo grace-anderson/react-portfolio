@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import ShadeButton from "../../components/button/ShadeButton";
 
 export default function Navbar() {
@@ -14,10 +14,10 @@ export default function Navbar() {
     },
     {
       title: "Contact",
-      link: "/contact",
+      link: "/Contact",
     },
     {
-      title: "Resume",
+      title: "Resumé",
       link: "/Resume",
     },
   ];
@@ -27,26 +27,20 @@ export default function Navbar() {
   };
 
   const location = useLocation();
-  const navigate = useNavigate();
 
   function isActive(link) {
     return location.pathname === link;
   }
 
-  function redirect(link) {
-    // navigate(link);
-  }
-
   return (
 
     <nav>
-      <ul className="ul-padding flex items-centre justify-center">
+      <ul className="ul-padding flex flex-wrap items-centre justify-center">
 
         {navItems.map((item) => {
           return (
             <li key={item.link} style={liStyle}>
               <ShadeButton
-                onClick={redirect(item.link)}
                 isActive={isActive(item.link)}
               >
                 <NavLink className="font-base" to={item.link}>

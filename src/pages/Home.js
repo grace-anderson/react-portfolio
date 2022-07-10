@@ -8,6 +8,8 @@ export default function Home() {
       <div className="flex items-center justify-center">
         <img className="image-circle" src={helen} alt="Helen"></img>
       </div>
+      <div className="flex justify-center">
+      <div className="text-content-width">
       <p>
         I'm a functional analyst with experience in a wide range of domains
         (airline, university, federal government) and have just added full-stack
@@ -22,6 +24,8 @@ export default function Home() {
         process analysis and improvement, requirements elicitation and system
         delivery (waterfall and agile delivery contexts).
       </p>
+      </div>
+      </div>
     </div>
   );
 }

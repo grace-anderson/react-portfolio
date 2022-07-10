@@ -52,11 +52,11 @@ function Portfolio() {
           <img
             className="card-image"
             src={jate}
-            alt="JATE-Just Another Text Editor"
+            alt="Just Another Text Editor (JATE)"
           ></img>
         </a>
       ),
-      title: "JATE - Just Another Text Editor",
+      title: "Just Another Text Editor",
       description:
         "A text editor that runs in the browser that also functions offline. Code-mirror, express, idb, if-env, node.",
       deployed: (
@@ -136,7 +136,7 @@ function Portfolio() {
           rel="noreferrer"
           alt="Demo of Social Network API"
         >
-          Demonstration of Social Network API
+          Demo of Social Network API
         </a>
       ),
       github: (
@@ -173,7 +173,7 @@ function Portfolio() {
           rel="noreferrer"
           alt="Demo of E-commerce Back End"
         >
-          Demonstration of E-Commerce Back End
+          Demo of E-Commerce Back End
         </a>
       ),
       github: (
@@ -210,7 +210,7 @@ function Portfolio() {
           rel="noreferrer"
           alt="Demo of Employee Tracker"
         >
-          Demonstration of Employee Tracker
+          Demo of Employee Tracker
         </a>
       ),
       github: (
@@ -235,7 +235,7 @@ function Portfolio() {
               <div>{item.image}</div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-              <div>{item.deployed}</div>
+              <div className="external-link">{item.deployed}</div>
               <div className="card-icon">{item.github}</div>
             </div>
           </div>

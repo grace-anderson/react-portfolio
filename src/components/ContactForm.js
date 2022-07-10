@@ -17,7 +17,8 @@ function ContactForm() {
       e.target.name === "email"
     ) {
       if (e.target.value.length === 0) {
-        setErrorMessage(`${e.target.name} is required.`);
+        setErrorMessage(`${e.target.name} is required`);
+        setSuccessMessage("");
       }
     }
   };
@@ -27,7 +28,7 @@ function ContactForm() {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
-
+    setSuccessMessage("");
     // Set the input field state to the value of the input
     if (inputType === "email") {
       setEmail(inputValue);
@@ -42,13 +43,13 @@ function ContactForm() {
     e.preventDefault();
 
     if (validateName(name)) {
-      setErrorMessage("Name must be at least four (4) characters");
+      setErrorMessage("name must be at least four (4) characters");
       return;
     } else if (!validateEmail(email)) {
-      setErrorMessage("Email is invalid");
+      setErrorMessage("email is invalid");
       return;
     } else if (validateMessage(message)) {
-      setErrorMessage("Message is empty");
+      setErrorMessage("message is empty");
       return;
     }
     setSuccessMessage(
@@ -65,7 +66,7 @@ function ContactForm() {
   return (
     <div className="form-container">
       <div className="form-container__details">
-        <div className="form-container__title">Welcome {name}</div>
+        <div className="form-container__title"><h3>Hello {name}!</h3></div>
         <form className="form">
           <div className="form__field">
             <input
@@ -112,12 +113,12 @@ function ContactForm() {
         </form>
         {errorMessage && (
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <p className="message-text error-text">{errorMessage}</p>
           </div>
         )}
         {successMessage && (
           <div>
-            <p className="success-text">{successMessage}</p>
+            <p className="message-text success-text">{successMessage}</p>
           </div>
         )}
       </div>

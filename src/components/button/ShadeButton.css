@@ -1,8 +1,8 @@
 .ShadeButton {
-  padding-top: 10px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: white;
 
   cursor: pointer;
@@ -11,15 +11,17 @@
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
-  border-color: rgb(45, 157, 255);
+  border-color: var(--pink);
 }
 
 .ShadeButton:hover {
-  border-bottom: 2px;
+  border-bottom: 0.2rem;
   border-style: solid;
+  border-color: var(--pink);
 }
 
 .ShadeButton-active {
-  border-bottom: 2px;
+  border-bottom: 0.2rem;
   border-style: solid;
+  border-color: var(--pink);
 }
