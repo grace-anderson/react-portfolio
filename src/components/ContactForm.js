@@ -8,8 +8,22 @@ function ContactForm() {
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
+  const handleBlank = (e) => {
+    //handle when field exited without entering anything
+    e.preventDefault();
+    if (
+      e.target.name === "name" ||
+      e.target.name === "message" ||
+      e.target.name === "email"
+    ) {
+      if (e.target.value.length === 0) {
+        setErrorMessage(`${e.target.name} is required.`);
+      }
+    }
+  };
+
   const handleInputChange = (e) => {
-    //get value of name that triggered the change
+    //get field that triggered the change
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
@@ -38,7 +52,7 @@ function ContactForm() {
       return;
     }
     setSuccessMessage(
-      `Thank you, ${name}. Contact form submitted successfully. I will be in touch soon.`
+      `Thank you, ${name}. Contact form submitted successfully.`
     );
 
     // Clear input and error message after successful submission
@@ -55,9 +69,10 @@ function ContactForm() {
         <form className="form">
           <div className="form__field">
             <input
-            className="form__input"
+              className="form__input"
               value={name}
               name="name"
+              onBlur={handleBlank}
               onChange={handleInputChange}
               type="text"
               placeholder="Enter your name"
@@ -65,9 +80,10 @@ function ContactForm() {
           </div>
           <div className="form__field">
             <input
-            className="form__input"
+              className="form__input"
               value={email}
               name="email"
+              onBlur={handleBlank}
               onChange={handleInputChange}
               type="email"
               placeholder="Add your email"
@@ -75,16 +91,21 @@ function ContactForm() {
           </div>
           <div className="form__field">
             <textarea
-            className="form__input"
+              className="form__input"
               value={message}
               name="message"
+              onBlur={handleBlank}
               onChange={handleInputChange}
               type="text"
               placeholder="Type your message here"
             />
           </div>
           <div>
-            <button className="form__submit" type="button" onClick={handleFormSubmit}>
+            <button
+              className="form__submit"
+              type="button"
+              onClick={handleFormSubmit}
+            >
               Submit
             </button>
           </div>

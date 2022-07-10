@@ -58,8 +58,7 @@ code {
 }
 
 p {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 1rem 2rem;
 }
 
 h1,
@@ -67,7 +66,7 @@ h2,
 h3 {
   font-family: "Short Stack", cursive;
   text-align: center;
-  padding-top: 1rem;
+  padding: 2rem 0 0.4em;
 }
 
 .header-title {
@@ -90,6 +89,7 @@ h3 {
   height: 8rem;
   object-fit: cover;
   border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .skills-list {
@@ -137,19 +137,6 @@ h3 {
   background: #037ef3;
   padding: 2rem 0;
 }
-
-/*.form {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 2rem;
-}
-
-.form input {
-  display: block;
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
-  width: 60%;
-} */
 
 .form-container {
   width: 100%;
