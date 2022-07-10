@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import {
-  validateEmail,
-  validateName,
-  validateMessage,
-} from "./utils/helpers";
+import { validateEmail, validateName, validateMessage } from "./utils/helpers";
 
 function ContactForm() {
   const [name, setName] = useState("");
@@ -41,7 +37,9 @@ function ContactForm() {
       setErrorMessage("Message is empty");
       return;
     }
-    setSuccessMessage(`Thank you, ${name}. Contact form submitted successfully. I will be in touch soon.`);
+    setSuccessMessage(
+      `Thank you, ${name}. Contact form submitted successfully. I will be in touch soon.`
+    );
 
     // Clear input and error message after successful submission
     setName("");
@@ -51,46 +49,57 @@ function ContactForm() {
   };
 
   return (
-    <div>
-      <p>Hello {name}</p>
-      <form className="form">
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Enter your name"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="Add your email"
-        />
-
-        <textarea
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Type your message here"
-        />
-
-        <button type="button" onClick={handleFormSubmit}>
-          Submit
-        </button>
-      </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
-      {successMessage && (
-        <div>
-          <p className="success-text">{successMessage}</p>
-        </div>
-      )}
+    <div className="form-container">
+      <div className="form-container__details">
+        <div className="form-container__title">Welcome {name}</div>
+        <form className="form">
+          <div className="form__field">
+            <input
+            className="form__input"
+              value={name}
+              name="name"
+              onChange={handleInputChange}
+              type="text"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div className="form__field">
+            <input
+            className="form__input"
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              type="email"
+              placeholder="Add your email"
+            />
+          </div>
+          <div className="form__field">
+            <textarea
+            className="form__input"
+              value={message}
+              name="message"
+              onChange={handleInputChange}
+              type="text"
+              placeholder="Type your message here"
+            />
+          </div>
+          <div>
+            <button className="form__submit" type="button" onClick={handleFormSubmit}>
+              Submit
+            </button>
+          </div>
+        </form>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+        {successMessage && (
+          <div>
+            <p className="success-text">{successMessage}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
