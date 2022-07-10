@@ -1,7 +1,6 @@
 import React from "react";
 import { FaGithubSquare, FaLinkedin, FaStackOverflow } from "react-icons/fa";
 
-
 function Icons() {
   const iconItems = [
     {
@@ -48,7 +47,7 @@ function Icons() {
           <div className="icon-style">
             <div className="icon-padding">
               <div>{item.icon}</div>
-              </div>
+            </div>
           </div>
         </div>
       ))}

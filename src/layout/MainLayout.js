@@ -16,7 +16,7 @@ export default function MainLayout(props) {
       {props.children}
 
       {/* footer */}
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -66,7 +66,9 @@ function ContactForm() {
   return (
     <div className="form-container">
       <div className="form-container__details">
-        <div className="form-container__title"><h3>Hello {name}!</h3></div>
+        <div className="form-container__title">
+          <h3>Hello {name}!</h3>
+        </div>
         <form className="form">
           <div className="form__field">
             <input
