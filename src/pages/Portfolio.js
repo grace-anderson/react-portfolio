@@ -82,6 +82,39 @@ function Portfolio() {
     {
       image: (
         <a
+          href="https://enigmatic-bayou-29924.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="card-image" src={techBlog} alt="Tech Blog app"></img>
+        </a>
+      ),
+      title: "Tech Blog",
+      description:
+        "A CMS-style blog where developers publish blog posts and comment on others' posts. Express, MySQL, sequelize",
+      deployed: (
+        <a
+          href="https://enigmatic-bayou-29924.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+          alt="Deployed Tech Blog app"
+        >
+          Deployed Tech Blog app
+        </a>
+      ),
+      github: (
+        <a
+          href="https://github.com/grace-anderson/tech-blog"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaGithubSquare />
+        </a>
+      ),
+    },
+    {
+      image: (
+        <a
           href="https://github.com/grace-anderson/social-network-api"
           target="_blank"
           rel="noreferrer"
@@ -109,39 +142,6 @@ function Portfolio() {
       github: (
         <a
           href="https://github.com/grace-anderson/social-network-api"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaGithubSquare />
-        </a>
-      ),
-    },
-    {
-      image: (
-        <a
-          href="https://enigmatic-bayou-29924.herokuapp.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img className="card-image" src={techBlog} alt="Tech Blog app"></img>
-        </a>
-      ),
-      title: "Tech Blog",
-      description:
-        "A CMS-style blog where developers publish blog posts and comment on others' posts. Express, MySQL, sequelize",
-      deployed: (
-        <a
-          href="https://enigmatic-bayou-29924.herokuapp.com/"
-          target="_blank"
-          rel="noreferrer"
-          alt="Deployed Tech Blog app"
-        >
-          Deployed Tech Blog app
-        </a>
-      ),
-      github: (
-        <a
-          href="https://github.com/grace-anderson/tech-blog"
           target="_blank"
           rel="noreferrer"
         >

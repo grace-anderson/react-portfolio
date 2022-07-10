@@ -121,6 +121,20 @@ h3 {
   font-size: 2.4rem;
 }
 
+/* form */
+.form {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  display: block;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  width: 60%;
+}
+
 @media (max-width: 768px) {
   .card {
     width: 80%;
