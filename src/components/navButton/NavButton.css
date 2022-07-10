@@ -1,4 +1,4 @@
-.ShadeButton {
+.NavButton {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -14,13 +14,13 @@
   border-color: var(--pink);
 }
 
-.ShadeButton:hover {
+.NavButton:hover {
   border-bottom: 0.2rem;
   border-style: solid;
   border-color: var(--pink);
 }
 
-.ShadeButton-active {
+.NavButton-active {
   border-bottom: 0.2rem;
   border-style: solid;
   border-color: var(--pink);

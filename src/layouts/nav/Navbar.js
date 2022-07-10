@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import ShadeButton from "../../components/button/ShadeButton";
+import NavButton from "../../components/button/NavButton";
 
 export default function Navbar() {
   const navItems = [
@@ -33,20 +33,16 @@ export default function Navbar() {
   }
 
   return (
-
     <nav>
       <ul className="ul-padding flex flex-wrap items-centre justify-center">
-
         {navItems.map((item) => {
           return (
             <li key={item.link} style={liStyle}>
-              <ShadeButton
-                isActive={isActive(item.link)}
-              >
+              <NavButton isActive={isActive(item.link)}>
                 <NavLink className="font-base" to={item.link}>
                   {item.title}
                 </NavLink>
-              </ShadeButton>
+              </NavButton>
             </li>
           );
         })}
