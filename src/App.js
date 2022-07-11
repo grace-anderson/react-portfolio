@@ -5,14 +5,16 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
-
 function App() {
   return (
     <BrowserRouter>
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/react-portfolio" element={<Home />} />
+          <Route path="/react-portfolio/" element={<Home />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
