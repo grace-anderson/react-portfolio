@@ -6,19 +6,19 @@ export default function Navbar() {
   const navItems = [
     {
       title: "About",
-      link: "/Home",
+      link: "/home",
     },
     {
       title: "Portfolio",
-      link: "/Portfolio",
+      link: "/portfolio",
     },
     {
       title: "Contact",
-      link: "/Contact",
+      link: "/contact",
     },
     {
       title: "Resumé",
-      link: "/Resume",
+      link: "/resume",
     },
   ];
 
