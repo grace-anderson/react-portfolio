@@ -13,11 +13,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/react-portfolio" element={<Home />} />
           <Route path="/react-portfolio/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/react-portfolio/home" element={<Home />} />
+          <Route path="/react-portfolio/about" element={<Home />} />
+          <Route path="/react-portfolio/portfolio" element={<Portfolio />} />
+          <Route path="/react-portfolio/contact" element={<Contact />} />
+          <Route path="/react-portfolio/resume" element={<Resume />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>
