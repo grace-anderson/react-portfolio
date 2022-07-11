@@ -9,7 +9,7 @@ export default function Home() {
         <img className="image-circle" src={helen} alt="Helen"></img>
       </div>
       <div className="flex justify-center">
-      <div className="text-content-width">
+      <div className="text-content-width-med">
       <p>
         I'm a functional analyst with experience in a wide range of domains
         (airline, university, federal government) and have just added full-stack
