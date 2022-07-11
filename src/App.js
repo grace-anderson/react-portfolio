@@ -1,4 +1,7 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
+
+// updated BrowserRouter to HashRouter to make routes work in gh pages - see https://stackoverflow.com/questions/54153911/react-router-gitlab-pages-show-404-error-on-refreshing?noredirect=1&lq=1 and https://github.com/facebook/create-react-app/issues/1765
+
 import MainLayout from "./layout/MainLayout";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
