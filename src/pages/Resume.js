@@ -29,6 +29,7 @@ export default function Resume() {
           </ul>
           <h2>Recent Certifications</h2>
           <ul className="skills-list">
+            <li>Full-Stack Coding Bootcamp (Javascript): University of Sydney</li>
             <li>Certified Business Analysis Professional (CBAP)</li>
             <li>Certified Expert in BPMN 2 (OMG)</li>
             <li>Prince2 Practitioner</li>

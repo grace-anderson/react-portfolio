@@ -1,10 +1,10 @@
 import React from "react";
 import { FaGithubSquare } from "react-icons/fa";
 import bookNest from "../components/images/bookNest.png";
+import voices from "../components/images/voices.png";
 import jate from "../components/images/jate.png";
 import social from "../components/images/social.png";
 import techBlog from "../components/images/techBlog.png";
-import ecommerce from "../components/images/ecommerce.png";
 import employeeTracker from "../components/images/employeeTracker.png";
 
 function Portfolio() {
@@ -35,6 +35,39 @@ function Portfolio() {
       github: (
         <a
           href="https://github.com/grace-anderson/book-nest"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaGithubSquare />
+        </a>
+      ),
+    },
+    {
+      image: (
+        <a
+          href="https://voices-stories.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="card-image" src={voices} alt="Voices"></img>
+        </a>
+      ),
+      title: "Voices",
+      description:
+        "An app for sharing stories. Single-page MERNG stack built with React, GraphQL, Node, Express, Mongoose ODM, MongoDB and Material-UI",
+      deployed: (
+        <a
+          href="https://voices-stories.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer"
+          alt="Deployed Voices app"
+        >
+          Deployed Voices app
+        </a>
+      ),
+      github: (
+        <a
+          href="https://github.com/grace-anderson/voices"
           target="_blank"
           rel="noreferrer"
         >
@@ -142,43 +175,6 @@ function Portfolio() {
       github: (
         <a
           href="https://github.com/grace-anderson/social-network-api"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaGithubSquare />
-        </a>
-      ),
-    },
-    {
-      image: (
-        <a
-          href="https://github.com/grace-anderson/e-commerce-back-end"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            className="card-image"
-            src={ecommerce}
-            alt="E-commerce Back End"
-          ></img>
-        </a>
-      ),
-      title: "E-commerce Back End",
-      description:
-        "A back end for an e-commerce site configured with working Express.js API using Sequelize to interact with a MySQL database",
-      deployed: (
-        <a
-          href="https://drive.google.com/file/d/1uElJcKe_BD67qOa6dpZX5QPM1EucG4sa/view?usp=sharing"
-          target="_blank"
-          rel="noreferrer"
-          alt="Demo of E-commerce Back End"
-        >
-          Demo of E-Commerce Back End
-        </a>
-      ),
-      github: (
-        <a
-          href="https://github.com/grace-anderson/e-commerce-back-end"
           target="_blank"
           rel="noreferrer"
         >
